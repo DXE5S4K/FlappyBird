@@ -19,27 +19,33 @@ public class MainActivity extends AppCompatActivity {
         switch (gameAppstate){
             case STOP:
             {
-                Log.i("Gamestate", "STOP");
+                Log.i("Appstate", "STOP");
                 break;
             }
             case PLAYING:
             {
-                Log.i("Gamestate", "RUNNING");
+                Log.i("Appstate", "RUNNING");
                 break;
             }
             case PAUSED:
             {
-                Log.i("Gamestate", "PAUSED");
+                Log.i("Appstate", "PAUSED");
                 break;
             }
             case GAMEOVER:
             {
-                Log.i("Gamestate", "GAMEOVER");
+                Log.i("Appstate", "GAMEOVER");
                 break;
             }
+            case WAITING:
+            {
+                Log.i("Appstate", "WAITING");
+                break;
+            }
+
             default:
             {
-                Log.i("Gamestate:", "Unknown gamestate!");
+                Log.i("Appstate:", "Unknown gamestate!");
                 break;
             }
         }
