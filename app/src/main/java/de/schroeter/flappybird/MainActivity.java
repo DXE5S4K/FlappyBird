@@ -4,25 +4,25 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import de.schroeter.flappybird.de.schroeter.flappybird.enums.Gamestate;
+import de.schroeter.flappybird.de.schroeter.flappybird.enums.Appstate;
 
 public class MainActivity extends AppCompatActivity {
-    Gamestate gameState = null;
+    Appstate gameAppstate = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gameState = Gamestate.MULLEFUK;
+        gameAppstate = Appstate.PLAYING;
 
-        switch (gameState){
+        switch (gameAppstate){
             case STOP:
             {
                 Log.i("Gamestate", "STOP");
                 break;
             }
-            case RUNNING:
+            case PLAYING:
             {
                 Log.i("Gamestate", "RUNNING");
                 break;
